@@ -1,8 +1,6 @@
-/*
-<ai_context>
-Exports the database schema for the app.
-</ai_context>
-*/
+// Re-export from profiles schema
+export { profilesTable } from "./profiles-schema"
 
-export * from "./profiles-schema"
-export * from "./todos-schema"
+// Re-export from deeds schema
+export { deedsTable } from "./deeds-schema"
+export type { InsertDeed, SelectDeed } from "./deeds-schema"
